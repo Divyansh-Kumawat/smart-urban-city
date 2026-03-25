@@ -1,0 +1,159 @@
+.map-container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-glass);
+  background: rgba(10, 14, 26, 0.5);
+  z-index: 10;
+}
+
+.map-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  background: rgba(34, 211, 238, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+.live-badge {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
+  animation: pulse-glow 2s infinite;
+}
+
+.map-wrapper {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+/* Override leaflet styles for dark theme */
+.leaflet-container {
+  background: #000 !important;
+  font-family: inherit !important;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid var(--border-glass) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+  box-shadow: var(--shadow-card) !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--border-glass) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: var(--bg-card-hover) !important;
+  color: var(--accent-cyan) !important;
+}
+
+.zone-tooltip {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  padding: 0.5rem 0.75rem;
+  backdrop-filter: blur(8px);
+}
+
+.zone-tooltip::before {
+  border-top-color: var(--border-glass) !important;
+}
+
+.tooltip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.tooltip-content strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+}
+
+.tooltip-type {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  pointer-events: none; /* Let clicks pass through */
+}
+
+.map-legend h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 0.8;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

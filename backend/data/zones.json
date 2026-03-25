@@ -1,0 +1,134 @@
+[
+  {
+    "id": "zone-a",
+    "name": "Green Valley Park",
+    "type": "park",
+    "color": "#22c55e",
+    "coordinates": [
+      [28.6145, 77.2090],
+      [28.6155, 77.2090],
+      [28.6155, 77.2110],
+      [28.6145, 77.2110]
+    ],
+    "baseData": {
+      "soil_moisture": 55,
+      "rainfall": 15,
+      "energy_usage": 45,
+      "drainage_capacity": 80,
+      "green_cover": 85,
+      "elevation": 220,
+      "solar_potential": 70,
+      "population_density": 200
+    }
+  },
+  {
+    "id": "zone-b",
+    "name": "Sunrise Residency",
+    "type": "residential",
+    "color": "#3b82f6",
+    "coordinates": [
+      [28.6130, 77.2060],
+      [28.6145, 77.2060],
+      [28.6145, 77.2085],
+      [28.6130, 77.2085]
+    ],
+    "baseData": {
+      "soil_moisture": 30,
+      "rainfall": 15,
+      "energy_usage": 180,
+      "drainage_capacity": 50,
+      "green_cover": 25,
+      "elevation": 215,
+      "solar_potential": 55,
+      "population_density": 3500
+    }
+  },
+  {
+    "id": "zone-c",
+    "name": "Metro Commerce Hub",
+    "type": "commercial",
+    "color": "#f59e0b",
+    "coordinates": [
+      [28.6155, 77.2060],
+      [28.6170, 77.2060],
+      [28.6170, 77.2085],
+      [28.6155, 77.2085]
+    ],
+    "baseData": {
+      "soil_moisture": 15,
+      "rainfall": 15,
+      "energy_usage": 350,
+      "drainage_capacity": 40,
+      "green_cover": 10,
+      "elevation": 210,
+      "solar_potential": 65,
+      "population_density": 5000
+    }
+  },
+  {
+    "id": "zone-d",
+    "name": "EcoTech Industrial Park",
+    "type": "industrial",
+    "color": "#ef4444",
+    "coordinates": [
+      [28.6115, 77.2090],
+      [28.6130, 77.2090],
+      [28.6130, 77.2115],
+      [28.6115, 77.2115]
+    ],
+    "baseData": {
+      "soil_moisture": 10,
+      "rainfall": 15,
+      "energy_usage": 500,
+      "drainage_capacity": 35,
+      "green_cover": 5,
+      "elevation": 205,
+      "solar_potential": 80,
+      "population_density": 800
+    }
+  },
+  {
+    "id": "zone-e",
+    "name": "Lotus Lake Wetlands",
+    "type": "park",
+    "color": "#06b6d4",
+    "coordinates": [
+      [28.6160, 77.2115],
+      [28.6175, 77.2115],
+      [28.6175, 77.2140],
+      [28.6160, 77.2140]
+    ],
+    "baseData": {
+      "soil_moisture": 75,
+      "rainfall": 15,
+      "energy_usage": 20,
+      "drainage_capacity": 95,
+      "green_cover": 90,
+      "elevation": 200,
+      "solar_potential": 60,
+      "population_density": 100
+    }
+  },
+  {
+    "id": "zone-f",
+    "name": "Heritage Town Square",
+    "type": "residential",
+    "color": "#8b5cf6",
+    "coordinates": [
+      [28.6130, 77.2115],
+      [28.6155, 77.2115],
+      [28.6155, 77.2140],
+      [28.6130, 77.2140]
+    ],
+    "baseData": {
+      "soil_moisture": 35,
+      "rainfall": 15,
+      "energy_usage": 150,
+      "drainage_capacity": 55,
+      "green_cover": 30,
+      "elevation": 212,
+      "solar_potential": 50,
+      "population_density": 4200
+    }
+  }
+]
