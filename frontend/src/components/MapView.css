@@ -60,38 +60,30 @@
   background: #000;
 }
 
-/* Override leaflet styles for dark theme */
-.leaflet-container {
-  background: #000 !important;
-  font-family: inherit !important;
-}
-
-.leaflet-control-zoom {
-  border: 1px solid var(--border-glass) !important;
-  border-radius: var(--radius-md) !important;
-  overflow: hidden;
-  box-shadow: var(--shadow-card) !important;
-}
-
-.leaflet-control-zoom a {
-  background-color: var(--bg-card) !important;
-  color: var(--text-primary) !important;
-  border-bottom: 1px solid var(--border-glass) !important;
-}
-
-.leaflet-control-zoom a:hover {
-  background-color: var(--bg-card-hover) !important;
-  color: var(--accent-cyan) !important;
-}
-
-.zone-tooltip {
+.deck-tooltip {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
-  color: var(--text-primary);
+  color: var(--accent-cyan);
+  font-weight: 600;
   border-radius: var(--radius-sm);
   box-shadow: var(--shadow-card);
   padding: 0.5rem 0.75rem;
   backdrop-filter: blur(8px);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.legend-elevation-note {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-glass);
+  color: var(--text-muted);
 }
 
 .zone-tooltip::before {
